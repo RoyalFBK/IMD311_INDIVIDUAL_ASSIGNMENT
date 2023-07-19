@@ -1,0 +1,179 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+
+}
+
+nav 
+{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px 
+    
+}
+
+nav
+{
+    position: fixed;
+    background-image: linear-gradient(#033747,#012733);
+}
+
+.logo 
+{
+font-size: 30px;
+font-weight: bold;
+float: left;color: antiquewhite;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+cursor: pointer;
+
+}
+
+nav li
+{
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a
+{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: solid;
+}
+
+nav li a:hover
+{
+    color: #ff8c69;
+    transition: all 0.4s ease 0s;
+    
+
+}
+
+.back-video
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+@media (min-aspect-ratio: 16/9) 
+{
+ .back-video{
+    width: 100%;
+    height: auto;
+ }   
+}
+
+@media (max-aspect-ratio: 16/9) 
+{
+ .back-video{
+    width: auto;
+    height: 100%;
+ }   
+}
+
+.text-box
+{
+    color: rgb(247, 247, 247);
+    position: absolute;
+    bottom: 0%;
+}
+
+.text-box p
+{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: white;
+    
+}
+
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.social-icons
+{
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    left: 87%;
+}
+
+.content
+{
+    color: rgb(247, 247, 247);
+    position: relative;
+    bottom: -20%;
+    text-align: center;
+
+    
+}
+
+.content h1
+{
+    font-size: 120px;
+    line-height: 140px;
+    font-weight: 600;
+
+}
+
+.content p
+{
+    line-height: 25px;
+    text-align: center;
+}
+
+.link
+{
+    margin: 25px;
+    padding: 0px 0px;
+
+}
+
+.link a
+{
+    color: #fff;
+    text-decoration: rgb(170, 6, 6);
+    display: inline-block;
+    
+}
+
+.btn
+{border: 2px solid #ffff;
+padding: 10px 35px;
+border-radius: 30px;
+margin-right: 15px;
+}
+
+.slide-left
+{
+    animation: slideleft 1s linear forwards;
+
+}
+@keyframes slideleft
+{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
